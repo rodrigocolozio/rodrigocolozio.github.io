@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TRUE5</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Menu de diretórios */
+        .ls-list {
+            margin-bottom: 40px;
+        }
+
+        .ls-list a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .ls-list a.selected {
+            color: #ff0000;
+            /* Destaque para o diretório selecionado */
+            text-decoration: underline;
+        }
+
+        .ls-list a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Estilo da lista de contato */
+        .contact-info {
+            width: 80%;
+            max-width: 800px;
+            background-color: #111;
+            padding: 25px;
+            /* Aumentando o padding */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        /* Estilo do parágrafo */
+        .contact-text {
+            margin-top: 40px;
+            /* Aumentando o espaço acima do parágrafo */
+            text-align: center;
+            color: #00ff00;
+        }
+
+        /* Estilo dos links */
+        .contact-links {
+            margin-top: 10px;
+        }
+
+        .contact-links a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        #a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        .pgp {
+            text-align: left;
+            overflow: auto;
+            /* Adiciona scroll se o conteúdo exceder */
+            white-space: pre-wrap;
+            /* Mantém quebras de linha */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu de diretórios -->
+    <div class="ls-list">
+        <a href="index.html">root</a>
+        <a href="about.html">whoami</a>
+        <a href="articles.html">articles</a>
+        <a href="contact.html" class="selected">contact</a>
+    </div>
+
+    <!-- Conteúdo da página de Contato -->
+    <div class="content">
+        <!-- Simulação do terminal com o comando cat para mostrar a chave pública -->
+        <div class="contact-info">
+            <p>~/ cat contact.txt</p>
+            <pre class="pgp">
+                -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+                mQGNBGcHJ10BDAC8qt3WZg07JI605QEgF6u34pmduXd+6/2CEkfLNNLv9ovqJqmy
+                hTUQ8E/xJzb0ZCF9rQuwNKTwThveuzO3Yipwdc2s1eGhUw7Rr+YQ83Be9zwgJSC4
+                UbD6DqJh8GAi7yJ+CFaWD/YbP12Rs+zZo1AI7wKoi7Vb7WiMk+1Uf7/8fvKuxh3K
+                K79iSTQVlp5RkWKqT73Y1O63PomFX29D47NTg4f6bUaPU565HAXWBOfMF6CCEDaQ
+                MHjq3Jze2k1iE7qyy8FLJLu9QmpRfuEvLGWEFVpQDPtx46oIKf2f83lNRU+VSCQj
+                lU1J9qfoRDTwMAnK3s5iQ1tlBI9PMR8Kg2n/T59gzSXkdnWHNaPYMRYMSysoq/Xy
+                8+fKhPQtZX66pF5sKuTwGTlFrrMMFDusD5jpgsT8bbj8O7/b5AlFRisdq7XxTnNY
+                dRdlQ/MLsbn93dBUui4UsVUVd6elCrIzkig1L6nOqxy1dffzJ2eov6rY95Q/cNhu
+                qtb+5q6g/u0MekcAEQEAAbQsUm9kcmlnbyBDIChwdWJsaWMga2V5KSA8dHJ1ZTVt
+                YWlsQHByb3Rvbi5tZT6JAc4EEwEKADgWIQTqThsq/7f1/Gd6itJ51GqCBD4z5QUC
+                ZwcnXQIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRB51GqCBD4z5a9nDAC6
+                ixmgvhhlCqhjF+LL/7u7ux/jDpKaIngkTH84RSs2eXC3/j/oZFOJAwXUAviaNXff
+                +wsRmQuW9x1m1k/6r1zOb5c3Ab4/yW4xeK5zrQOzvTqEL7FIccvwGR1utnXPNc/c
+                NooLz4VNy9AFWxyNeQ6C6FvkxqFc4VSApI4+K1a5/GoSqXGfBIpOZdepZuQ31quD
+                TxayOIYfFuiac912J2M9MZumUzmfhqiFIjY24pkbfcHTffy3vEdxFzeS9n/byh4h
+                W7QTWgndjs77zjDniva6ECkoOamLtkyU+5sRG1xdCebSPXGT/fsYV0eENE3GNUR0
+                Ac4CuscDhNq+b9xVpSTiKq+XuvDoljXhNOfVg9sKZ6rZDDJNLr/0Nmx2chXVgMhh
+                VpV76C7RfMcdJKvL0Vc98AIc3dPWDT61rLT7RgrIcJJhZb65C0buO1h/4jOndo3N
+                4SWCpVrE+g7SY/FWsDfd2OXZqmiUcZFs5HkVVzeMT/Y+txZuWD7aNRfIiXTxkp25
+                AY0EZwcnXQEMALnlamAip8YiMuZOJmXRcbIWtKpF7hauX6WMSaDn5V30nGBuSwSq
+                KSuCI1OHjXvUtltQB5nZ/Tz63KDnbnbqQFtaKdy3MSpVpZz4/gezMa8B2vQ4KfhW
+                g7WeXPP+DJUWdAaz7jQeEx+gqZPa2w6YSMY8FP2dffCvK2bjKqqE5oCfkK9+7AKT
+                Ft9WP9OescsTf7MWgNDW20sii87MzxUAogO7O0TIRLRNKupGWyg0NN1/n6GmQdDw
+                MhYHonbsCGniHu7EEhNasYTZGUL69boy3hp0Wio2WPQOCQrD4rXugmY4lZJceANA
+                yWp07T3pgvIHsYPrmSzqlkDpzr8sFjfA9zya/uuYrye5w2FwLU+AqghPglhPpFWv
+                3ep2BrX/rz2Hzp9izl7am+jIszgQXTmml2Qn0fBUogX+O0IIqpry2/GAzb9MWTix
+                8bL66afMIx8yvbi5R99hx/hdNRSvtr8LjCnwFo6QugAFARDAxHrkPQRdPWBZp3pb
+                1lTT4PoS+oxh+wARAQABiQG2BBgBCgAgFiEE6k4bKv+39fxneorSedRqggQ+M+UF
+                AmcHJ10CGwwACgkQedRqggQ+M+UT5gv9GysmHNjB5IG/7ppCmENaHkkMiQpNORa6
+                LmSuYqydq1MCK7AFJYhEIi2ukPKHL3wOsXYr72567xfvzYJIV3XdGJpJjrR3mrzc
+                k34HrpkuuJc7hYdeqLSGf9ksOMIarrUbnBeTxaQtTTM0E9VIKWe52SDlmOyAUXRP
+                LzZCyFRwMNV9kHS0Wibw/lvnKfj0T97cobv8u5rzXGLmP32CjbKYoTipFRcX5ERI
+                Zyyf0+JSKmQCjGkADFC80yOCiZSAp2S+vod0HCx6HQtd5e+PKEfuX+L2Uqso5kT3
+                l1QbF5Ozpfr8tAlaVSa3zB/1e+jrzzlll03TBPMpDQtONqXpCfkeY+WgIHzb+hm2
+                VP4BDKI+bQLqyvDaqIulnBGzxI3LIu+ODRxk5/YF8IkVAKw6xQe73/5O8TpqhDz7
+                4y3clPHv4KvaQgj/jsSdiWYkfm+6mLNuYMwuktnPiO9f8g+YdrWlNh5pr9eq1UAq
+                uMhoCxLnCKRiXERSe5t3KQMvrkGOBjEz
+                =mS+D
+                -----END PGP PUBLIC KEY BLOCK-----
+            </pre>
+            <p>You can find me online on:</p>
+            <li class="contact-links">
+                <a href="www.linkedin.com/in/rodrigocolozio">Linkedin</a>
+            </li>
+            <p>Feel free to send me an email at true5mail__at__proton.me</p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

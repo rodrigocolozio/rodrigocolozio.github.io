@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - TRUE5</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Menu de diretórios */
+        .ls-list {
+            margin-bottom: 40px;
+        }
+
+        .ls-list a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .ls-list a.selected {
+            color: #ff0000;
+            /* Destaque para o diretório selecionado */
+            text-decoration: underline;
+        }
+
+        .ls-list a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Estilo da imagem */
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            background-color: #333;
+            /* Placeholder para a imagem */
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+
+        /* Parágrafo centralizado e justificado */
+        .about-text {
+            width: 80%;
+            max-width: 800px;
+            text-align: justify;
+            color: #00ff00;
+            background-color: #111;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu de diretórios -->
+    <div class="ls-list">
+        <a href="index.html">root</a>
+        <a href="about.html" class="selected">whoami</a>
+        <a href="articles.html">articles</a>
+        <a href="contact.html">contact</a>
+    </div>
+
+    <!-- Conteúdo da página About Me -->
+    <div class="content">
+        <!-- Espaço para imagem -->
+        <div class="profile-pic">
+            <!-- Imagem será adicionada aqui -->
+            <img src="assets/profile.jpg" alt="Descrição da Imagem"
+                style="width: 100%; height: 100%; border-radius: 50%;">
+        </div>
+        <!-- Parágrafo sobre você -->
+        <div class="about-text">
+            <p>~/ cat aboutme.txt</p>
+            <p># My journey with computers began in 2000 when I first laid hands on my dad's desktop. Though I couldn't
+                explain it at the time, that moment changed my life forever.<br><br>
+
+                As I delved into the world of programming, I quickly discovered my passion for cybersecurity and
+                hacking. Today, I specialize in penetration testing (pentesting), where I leverage my expertise to
+                identify and address security vulnerabilities.<br><br>
+
+                I have extensive experience with the CWE Top 25 and OWASP Top 10 vulnerabilities, employing a variety of
+                network and web application invasion tactics. My background also includes a solid understanding of laws,
+                regulations, standards, and security frameworks, as well as diverse protocols and executive report
+                writing.<br><br>
+
+                I am dedicated to helping organizations enhance their security posture and protect their critical
+                assets.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
