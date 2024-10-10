@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUE5 - Hacker Style</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ascii-art {
+            white-space: pre;
+            font-size: 20px;
+            margin-left: -140px;
+        }
+
+        .content {
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .ls-list {
+            margin-top: 20px;
+        }
+
+        .ls-list a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .ls-list a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .ascii-art {
+                font-size: 16px;
+                /* Ajusta o tamanho da fonte em telas menores */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ascii-art">
+            <pre>
+            _                ___ 
+            | |_ _ _ _  _ ___| __|
+            |  _| '_| || / -_)__ \
+             \__|_|  \_,_\___|___/
+            </pre>
+        </div>
+
+        <div class="content">
+            <span id="effect-phrase">"Everything is raw data"</span>
+        </div>
+
+        <div class="ls-list">
+            <p>ls var/www/html/true5</p>
+            <p>
+                <a href="index.html">> root</a>
+                <a href="about.html">> whoami</a>
+                <a href="articles.html">> articles</a>
+                <a href="contact.html">> contact</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
